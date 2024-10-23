@@ -7,7 +7,7 @@ export default function Card({ name, image, quote }) {
         <img width={80} height={80} src={image} />
       </div>
       <span className='mt-3'>{name}</span>
-      <p className='text-sm'>"{quote}"</p>
+      <p className='text-sm'>&quot;{quote}&quot;</p>
     </div>
   )
 }

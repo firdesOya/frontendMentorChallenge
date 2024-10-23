@@ -14,10 +14,11 @@ Users should be able to:
 
 ### Screenshot
 <img width="1402" alt="Screenshot 2024-02-23 at 14 19 08" src="https://github.com/user-attachments/assets/1ca71c67-f34e-415a-a836-43439f84363f">
-<img width="463<img width="1428" alt="Screenshot 2024-02-27 at 15 13 31" src="https://github.com/user-attachments/assets/09130549-1ff0-4f85-8a86-fd0eb0988a67">
-" alt="Screenshot 2024-02-27 at 15 13 17" src="https://github.com/user-attachments/assets/6cfb2b75-9270-4074-bde3-dcc28d0ad448">
+<img width="463" alt="Screenshot 2024-02-27 at 15 13 17" src="https://github.com/user-attachments/assets/15d2e710-7b8e-444d-871a-f375d3eb9f32">
 
-![](./screenshot.jpg)
+
+
+
 
 
 

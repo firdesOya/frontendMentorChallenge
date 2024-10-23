@@ -13,6 +13,9 @@ Users should be able to:
 - **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshot
+<img width="1402" alt="Screenshot 2024-02-23 at 14 19 08" src="https://github.com/user-attachments/assets/1ca71c67-f34e-415a-a836-43439f84363f">
+<img width="463<img width="1428" alt="Screenshot 2024-02-27 at 15 13 31" src="https://github.com/user-attachments/assets/09130549-1ff0-4f85-8a86-fd0eb0988a67">
+" alt="Screenshot 2024-02-27 at 15 13 17" src="https://github.com/user-attachments/assets/6cfb2b75-9270-4074-bde3-dcc28d0ad448">
 
 ![](./screenshot.jpg)
 
@@ -20,8 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontend-mentor-challenge-three-beta.vercel.app/)]
 
 
 

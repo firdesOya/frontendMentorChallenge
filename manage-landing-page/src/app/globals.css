@@ -1,0 +1,82 @@
+@tailwind base;
+
+body {
+  background-image: url('/bg-tablet-pattern.svg'), url('/bg-tablet-pattern.svg');
+  background-position: top -5rem right -5rem, right -11rem top 30rem;
+  background-repeat: no-repeat;
+  background-size: 90%, 60%;
+
+}
+
+.simplifyBackground {
+  background-image: url('/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 15%;
+
+}
+
+@media screen and (min-width:768px) {
+  body {
+    background-image: url('/bg-tablet-pattern.svg'), url('/bg-tablet-pattern.svg');
+    background-position: top -10rem right -6rem, left -20rem top 62rem;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+  }
+
+  .simplifyBackground {
+    background-image: url('/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0rem left 13rem;
+  }
+}
+
+@media screen and (min-width:1500px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-neutral-veryDarkBlue font-bold;
+
+}
+
+p {
+  @apply text-neutral-grayishBlue text-base;
+
+}
+
+
+
+@tailwind components;
+@tailwind utilities;
+
+
+
+.custom-swiper .swiper-pagination {
+  @apply mt-10;
+  /* Margin top */
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  @apply bg-transparent border border-solid border-primary-red lg:border-none w-2 h-2 opacity-100;
+  /* Dots rengi ve boyutu */
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  @apply bg-primary-red lg:bg-transparent;
+  /* Aktif dot rengi */
+}

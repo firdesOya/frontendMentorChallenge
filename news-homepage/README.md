@@ -1,5 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+#Link
+live_Url: [https://news-homepage-project-jet.vercel.app/]
 
 <img width="1337" alt="Screenshot 2024-02-16 at 17 05 02" src="https://github.com/user-attachments/assets/238f9cad-ce20-4654-803d-f42978f6f5fa">
 

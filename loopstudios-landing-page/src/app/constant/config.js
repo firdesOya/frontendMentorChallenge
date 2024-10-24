@@ -1,0 +1,20 @@
+export const nav=[{
+  id:1,
+  title:"About"
+},
+{
+  id:2,
+  title:"Careers"
+},
+{
+  id:3,
+  title:"Events"
+},
+{
+  id:4,
+  title:"Products"
+},
+{
+  id:5,
+  title:"Support"
+}]

@@ -4,11 +4,14 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
   --font-alata: 'Alata', sans-serif;
   --font-josefin-sans: 'Josefin Sans', sans-serif;
+  --very-dark-gray: hsl(0, 0%, 41%);
+  --dark-gray: hsl(0, 0%, 55%);
+  
 }
+
 
 .font-alata {
   font-family: var(--font-alata);
@@ -16,14 +19,11 @@
 
 .font-josefin {
   font-family: var(--font-josefin-sans);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
+
 
 .bg-hero {
   background-image: url('/images/mobile/image-hero.jpg');

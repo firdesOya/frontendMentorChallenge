@@ -6,12 +6,12 @@ import Footer from "./components/Footer";
 const alata = Alata({
   subsets: ["latin"],
   variable: "--font-alata",
-  weight: "400"
+  weight: ["400"]
 });
 const josefin_sans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin-sans",
-  weight: "300",
+  weight: ["300"],
 });
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin_sans.variable} ${alata.variable} antialiased relative`}
+        className={`${josefin_sans.variable} ${alata.variable} antialiased relative top-0`}
       >
         <Header />
         <main>

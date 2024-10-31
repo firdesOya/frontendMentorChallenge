@@ -55,7 +55,7 @@ export default function Header() {
         ))}
       </div>}
       <div className=" max-w-[1140px] w-full mx-auto px-6 ">
-        <div className="uppercase text-white text-[40px] mb-[20vh] sm:text-6xl p-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px] md:text-7xl">
+        <div className="uppercase font-josefin text-white text-[40px] mb-[20vh] sm:text-6xl p-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px] md:text-7xl">
           Immersive Experiences That  Deliver
         </div>
       </div>

@@ -21,7 +21,7 @@
 }
 
 h2{
-  @apply text-4xl font-josefin text-black uppercase xl:text-5xl
+  @apply text-4xl font-josefin text-black uppercase 
 }
 
 

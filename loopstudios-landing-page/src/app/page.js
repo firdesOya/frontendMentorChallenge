@@ -10,7 +10,7 @@ export default function Home() {
           <img className="w-full " src="/images/desktop/image-interactive.jpg" />
         </div>
         <div className="w-full lg:w-2/5  px-10 lg:px-0 lg:pl-10 lg:pt-16 xl:pl-20 xl:pt-24    bg-white  lg:-ml-36 lg:-mb-1">
-          <h2 className="  pb-5  ">
+          <h2 className=" pb-5  ">
             The leader in interactive VR
           </h2>
           <p className="font-alata   text-[var(--dark-gray)] text-sm">

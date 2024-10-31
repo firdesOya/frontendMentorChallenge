@@ -4,8 +4,8 @@ import { nav } from '../constant/config'
 
 export default function Header() {
   return (
-    <div className=' bg-hero w-full h-[110vh] md:h-[90vh] flex flex-col gap-[20vh] md:gap-[10vh]'>
-      <div className="container  mx-auto  z-10 py-10 flex items-center justify-between px-6">
+    <div className=' bg-hero w-full h-auto max-h-[110vh] md:max-h-[90vh] flex flex-col gap-[20vh] md:gap-[10vh]'>
+      <div className="max-w-[1140px] w-full mx-auto z-10 py-10 flex items-center justify-between px-6">
         <Link href="#">
           <img src="/images/logo.svg" />
         </Link>
@@ -21,8 +21,8 @@ export default function Header() {
           <img src="/images/icon-hamburger.svg" />
         </div>
       </div>
-      <div className="container mx-auto px-6 ">
-        <div className="uppercase text-white text-[40px] sm:text-6xl p-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px] md:text-7xl">
+      <div className=" max-w-[1140px] w-full mx-auto px-6 ">
+        <div className="uppercase text-white text-[40px] mb-[20vh] sm:text-6xl p-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px] md:text-7xl">
           Immersive Experiences That  Deliver
         </div>
       </div>

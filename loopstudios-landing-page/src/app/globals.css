@@ -11,8 +11,6 @@
   --dark-gray: hsl(0, 0%, 55%);
   
 }
-
-
 .font-alata {
   font-family: var(--font-alata);
 }
@@ -21,6 +19,12 @@
   font-family: var(--font-josefin-sans);
 
 }
+
+h2{
+  @apply text-4xl font-josefin text-black uppercase xl:text-5xl
+}
+
+
 
 
 

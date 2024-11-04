@@ -23,8 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin_sans.variable} ${alata.variable} antialiased relative top-0 `}
-      >
+        className={`${josefin_sans.variable} ${alata.variable} antialiased`}>
         <Header />
         <main>
           {children}

@@ -4,7 +4,7 @@ import { nav, socialMedia } from '../constant/config'
 
 export default function Footer() {
   return (
-    <div className='w-full realtive bottom-0 bg-black py-9'>
+    <div className='w-full bg-black py-9'>
       <div className='max-w-[1140px] w-full mx-auto px-6 flex flex-col md:flex-row  gap-14  justify-between '>
         <div className='flex flex-col text-center items-center md:items-start gap-7 '>
           <Link href="#">

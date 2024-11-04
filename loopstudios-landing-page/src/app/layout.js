@@ -23,12 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin_sans.variable} ${alata.variable} antialiased min-h-screen flex flex-col justify-between`}>
-        <Header />
-        <main >
-          {children}
-        </main>
-        <Footer />
+        className={`${josefin_sans.variable} ${alata.variable} antialiased min-h-screen `}>
+        <div className="flex flex-col justify-between">
+          <Header />
+          <main >
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

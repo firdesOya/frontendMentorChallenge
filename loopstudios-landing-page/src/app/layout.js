@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin_sans.variable} ${alata.variable} antialiased`}>
+        className={`${josefin_sans.variable} ${alata.variable} antialiased min-h-screen`}>
         <Header />
-        <main>
+        <main >
           {children}
         </main>
         <Footer />

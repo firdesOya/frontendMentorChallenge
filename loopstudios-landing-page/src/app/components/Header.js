@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <div className=' bg-hero w-full  flex flex-col gap-[20vh] md:gap-[10vh]'>
-      <div className="max-w-[1140px] w-full mx-auto z-30 py-10 flex items-center justify-between px-6">
+      <div className="max-w-[1140px] w-full mx-auto z-30 py-14 flex items-center justify-between px-6">
         <Link href="#" onClick={handleLinkClick}>
           <img src="/images/logo.svg" />
         </Link>

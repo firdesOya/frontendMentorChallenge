@@ -47,7 +47,7 @@ export default function Header() {
           {toggle ? <img src="/images/icon-close.svg" /> : <img src="/images/icon-hamburger.svg" />}
         </div>
       </div>
-      {toggle && <div className="fixed top-0 inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center">
+      {toggle && <div className="fixed top-0 inset-0 bg-black  z-20 flex flex-col items-start uppercase justify-center">
         {nav.map(item => (
           <div key={item.id}>
             <NavLink id={item.id} title={item.title} onClick={handleLinkClick} />

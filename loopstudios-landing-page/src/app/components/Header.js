@@ -29,10 +29,9 @@ export default function Header() {
   }, [toggle]);
 
 
-
   return (
-    <div className=' bg-hero w-full  flex flex-col gap-[20vh] md:gap-[10vh]'>
-      <div className="max-w-[1140px] w-full mx-auto z-30 py-14 flex items-center justify-between px-6">
+    <div className="bg-hero w-full min-h-screen md:h-[650px] md:min-h-0  flex flex-col gap-[200px]  md:gap-[140px]">
+      <div className="max-w-[1140px] w-full mx-auto z-30 pt-14 flex items-center justify-between px-6 xl:px-1">
         <Link href="#" onClick={handleLinkClick}>
           <img src="/images/logo.svg" />
         </Link>
@@ -47,15 +46,15 @@ export default function Header() {
           {toggle ? <img src="/images/icon-close.svg" /> : <img src="/images/icon-hamburger.svg" />}
         </div>
       </div>
-      {toggle && <div className='fixed top-0 inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center'>
+      {toggle && <div className="fixed top-0 inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center">
         {nav.map(item => (
           <div key={item.id}>
             <NavLink id={item.id} title={item.title} onClick={handleLinkClick} />
           </div>
         ))}
       </div>}
-      <div className=" max-w-[1140px] w-full mx-auto px-6 ">
-        <div className="uppercase font-josefin text-white text-[40px] mb-[20vh] sm:text-6xl p-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px] md:text-7xl">
+      <div className="max-w-[1140px] px-6 xl:px-1 w-full mx-auto">
+        <div className="uppercase font-josefin text-white text-4xl sm:text-6xl md:text-7xl px-10 py-5 border-2 border-solid border-white max-w-[600px] md:max-w-[650px]">
           Immersive Experiences That  Deliver
         </div>
       </div>

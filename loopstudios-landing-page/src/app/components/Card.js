@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card({ title, imgDesktop, imgMobile }) {
   return (
-    <div className='relative   group cursor-pointer'>
+    <div className='relative group cursor-pointer'>
       <img
         src={imgMobile}
         alt={title}

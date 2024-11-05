@@ -11,7 +11,8 @@ export default function Header() {
     setToggle(!toggle);
   }
   
-  const handleLinkClick = () => {
+  const handleLinkClick = (event) => {
+    event.preventDefault();
     setToggle(false); // Close the menu on link click
   };
 

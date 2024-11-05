@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-[1140px] mx-auto px-6 xl:px-1 pb-20 md:pb-40 items-center flex flex-col md:flex-row flex-wrap gap-5 md:gap-0 md:justify-between">
-        <h2 className="order-1">Our creations</h2>
+        <h2 className="order-1 ">Our creations</h2>
         <button className="px-[52px] py-2 order-3 md:order-2 uppercase font-alata text-sm tracking-wider border border-solid border-black hover:bg-black hover:text-white">See All</button>
         <div className="order-2 lg:order-3 md:py-20">
           <CardList />

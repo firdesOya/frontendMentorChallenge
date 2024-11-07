@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family: var(--font-epilogue), sans-serif;
+}
+
+p {
+  font-size: 18px;
+}

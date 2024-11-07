@@ -36,5 +36,5 @@ export const imageLogo = [
   { id: 1, name: 'Databiz', src: '/images/client-databiz.svg' },
   { id: 2, name: 'Audiophile', src: '/images/client-audiophile.svg' },
   { id: 3, name: 'Maker', src: '/images/client-maker.svg' },
-  { id: 4, name: 'Meet', src: '/images/client-meet.svg' },
+  { id: 4, name: 'Meet', src: '/images/client-meet.svg' }
 ]

@@ -4,10 +4,10 @@ export const navList = [{
   path: "#",
   icon: "/images/icon-arrow-down.svg",
   sublinks: [
-    { id: 1, title: "Todo List", path: "/features/todo-list" },
-    { id: 2, title: "Calendar", path: "/features/calendar" },
-    { id: 3, title: "Reminders", path: "/features/reminders" },
-    { id: 4, title: "Planning", path: "/features/planning" },
+    { id: 1, title: "Todo List", icon: "/images/icon-todo.svg" },
+    { id: 2, title: "Calendar", icon: "/images/icon-calendar.svg" },
+    { id: 3, title: "Reminders", icon: "/images/icon-reminders.svg" },
+    { id: 4, title: "Planning", icon: "/images/icon-planning.svg" },
   ],
 },
 {
@@ -16,9 +16,9 @@ export const navList = [{
   path: "#",
   icon: "/images/icon-arrow-down.svg",
   sublinks: [
-    { id: 1, title: "History", path: "/company/history" },
-    { id: 2, title: "Our Team", path: "/company/team" },
-    { id: 3, title: "Blog", path: "/company/blog" },
+    { id: 1, title: "History" },
+    { id: 2, title: "Our Team" },
+    { id: 3, title: "Blog" },
   ],
 },
 {

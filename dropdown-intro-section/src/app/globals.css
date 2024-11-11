@@ -11,3 +11,10 @@ body {
 p {
   font-size: 18px;
 }
+.custom-shadow {
+  box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.1),   /* Sağ alt köşe */
+    -10px -10px 15px rgba(0, 0, 0, 0.1), /* Sol üst köşe */
+    -10px 10px 15px rgba(0, 0, 0, 0.1),  /* Sol alt köşe */
+    10px -10px 15px rgba(0, 0, 0, 0.1);  /* Sağ üst köşe */
+}

@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${epilogue.variable}  antialiased min-h-screen`}
+        className={`${epilogue.variable}  antialiased min-h-screen bg-almost-white`}
       >
         <Header />
         <main>

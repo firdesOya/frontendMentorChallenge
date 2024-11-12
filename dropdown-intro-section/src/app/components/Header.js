@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className='py-6 px-6 md:px-0 container max-w-[1370px] mx-auto flex items-center justify-between md:gap-16 text-sm font-medium'>
-      <Link href="#">
+      <Link href="/">
         <img src='/images/logo.svg' />
       </Link>
       <div className='block md:hidden cursor-pointer' onClick={onClickToggle}>

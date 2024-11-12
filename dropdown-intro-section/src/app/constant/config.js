@@ -3,11 +3,12 @@ export const navList = [{
   title: "features",
   path: "#",
   icon: "/images/icon-arrow-down.svg",
+  icon1: "/images/icon-arrow-up.svg",
   sublinks: [
-    { id: 1, title: "Todo List", icon: "/images/icon-todo.svg" },
-    { id: 2, title: "Calendar", icon: "/images/icon-calendar.svg" },
-    { id: 3, title: "Reminders", icon: "/images/icon-reminders.svg" },
-    { id: 4, title: "Planning", icon: "/images/icon-planning.svg" },
+    { id: 1, title: "Todo List", icon: "/images/icon-todo.svg",path: "/features/todo-list",  },
+    { id: 2, title: "Calendar", icon: "/images/icon-calendar.svg",path: "/features/calender",  },
+    { id: 3, title: "Reminders", icon: "/images/icon-reminders.svg",path: "/features/reminders",  },
+    { id: 4, title: "Planning", icon: "/images/icon-planning.svg",path: "/features/planning",  },
   ],
 },
 {
@@ -15,21 +16,22 @@ export const navList = [{
   title: "company",
   path: "#",
   icon: "/images/icon-arrow-down.svg",
+  icon1: "/images/icon-arrow-up.svg",
   sublinks: [
-    { id: 1, title: "History" },
-    { id: 2, title: "Our Team" },
-    { id: 3, title: "Blog" },
+    { id: 1, title: "History",path: "/company/history", },
+    { id: 2, title: "Our Team",path: "/company/our-team", },
+    { id: 3, title: "Blog",path: "/company/blog", },
   ],
 },
 {
   id: 3,
   title: "careers",
-  path: "#",
+  path: "/careers",
 },
 {
   id: 4,
   title: "about",
-  path: "#",
+  path: "/about",
 }]
 
 export const imageLogo = [

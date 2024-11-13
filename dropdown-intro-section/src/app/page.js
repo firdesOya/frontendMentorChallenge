@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <section className="max-w-[1140px] mx-auto flex flex-col  gap-10 md:justify-between md:flex-row md:pb-20 pt-5 md:pt-12 ">
-        <div className="flex md:max-w-[500px] order-2 md:order-1 flex-col px-6 md:px-0 pt-24 items-center text-center md:text-start md:items-start gap-5 md:gap-14 ">
+        <div className="flex md:max-w-[500px] order-2 md:order-1 flex-col px-6 xl:px-0 pt-24 items-center text-center md:text-start md:items-start gap-5 md:gap-14 ">
           <h1 className="text-4xl md:text-7xl font-bold text-almost-black">Make <br className="md:block hidden" /> remote work</h1>
           <p className="text-medium-gray w-full md:max-w-[460px]">Get your team in sync,no matter your loaction.Streamline processes,create team rituals,and watch productivity soar.</p>
           <button className="bg-almost-black px-6 md:px-8 py-4 font-bold text-sm md:text-base text-almost-white border border-transparent rounded-xl hover:border-almost-black hover:text-almost-black hover:bg-almost-white">Learn more</button>

@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   return (
-    <header className='py-6 px-6 md:px-0 container max-w-[1370px] mx-auto flex items-center justify-between md:gap-16 text-sm font-medium'>
+    <header className='py-6 px-6 xl:px-0 container max-w-[1370px] mx-auto flex items-center justify-between md:gap-16 text-sm font-medium'>
       <Link href="/">
         <img src='/images/logo.svg' />
       </Link>

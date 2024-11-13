@@ -12,13 +12,10 @@ export default function NavList() {
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 768);
     };
-
     // İlk renderda kontrol et
     handleResize();
-
     // Ekran boyutu değiştikçe güncelle
     window.addEventListener('resize', handleResize);
-
     // Temizle
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -28,23 +25,31 @@ export default function NavList() {
       {navList.map((item) => {
         return <div
           key={item.id}
-          className='cursor-pointer relative group'
-        >
-          <Link
-            onClick={() => {
-              if (!isDesktop) {
-                setOpenDropDown(openDropDown === item.id ? null : item.id);
-              }
-            }}
-            href={item.path}
-            className={`flex flex-row items-center gap-3 px-1 py-2 ${openDropDown === item.id ? 'text-almost-black' : 'text-medium-gray'}  hover:text-almost-black`}>
-            {item.title}
-            <img
-              src={openDropDown === item.id || isDesktop ? item.icon1 : item.icon}
-              className={`transition-transform duration-300 ${openDropDown === item.id || (isDesktop && 'group-hover:rotate-180')
-                }`}
-            />
-          </Link>
+          className='cursor-pointer relative group'>
+          {item.sublinks ? (
+            <div
+              onClick={() => {
+                if (!isDesktop) {
+                  setOpenDropDown(openDropDown === item.id ? null : item.id);
+                }
+              }}
+              className={`flex flex-row items-center gap-3 px-1 py-2 ${openDropDown === item.id ? 'text-almost-black' : 'text-medium-gray'
+                } hover:text-almost-black`}
+            >
+              {item.title}
+              <img
+                src={openDropDown === item.id || isDesktop ? item.icon1 : item.icon}
+                className={`transition-transform duration-300 ${openDropDown === item.id || (isDesktop && 'group-hover:rotate-180')
+                  }`}
+              />
+            </div>
+          ) : (
+            <Link href={item.path}
+              className={`flex flex-row items-center gap-3 px-1 py-2 ${openDropDown === item.id ? 'text-almost-black' : 'text-medium-gray'
+                } hover:text-almost-black`}>
+              {item.title}
+            </Link>
+          )}
           {item.sublinks &&
             <div className={`flex-col  ${openDropDown === item.id ? 'flex' : 'hidden'
               } justify-start gap-4 md:group-hover:flex text-medium-gray relative md:absolute md:bg-white md:rounded-md md:custom-shadow p-5 md:right-0 top-0 md:top-8 min-w-[120px]`}>

@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${overpass.variable} ${ubuntu.variable}  antialiased`}
+        className={`${overpass.variable} ${ubuntu.variable}  antialiased relative`}
       >
         <Header />
-        <main>
+        <main >
           {children}
         </main>
         <Footer />

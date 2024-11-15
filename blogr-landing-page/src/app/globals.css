@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.text-ubuntu{
+  font-family: "Ubuntu",sans-serif;
+}
+.text-overpass{
+  font-family: "Overpass",sans-serif;
+}
 .hero{
   width: 100%;
   background: url('/images/bg-pattern-intro-desktop.svg'), linear-gradient(90deg, rgb(255, 143, 112) 10%, rgb(255, 61, 84) 58%);
   height: 600px;
-  background-size: 3100px;
   background-position: 25% -1346px;
   border-bottom-left-radius: 100px;
   color: white;
-
 }
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+
+.btn{
+  @apply px-1 py-3 border rounded-full w-[140px] text-ubuntu text-base font-bold 
 }

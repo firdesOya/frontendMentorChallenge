@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+h2{
+  @apply text-ubuntu font-medium text-4xl text-very-dark-blue;
+}
+h3{
+  @apply text-ubuntu font-medium text-2xl text-very-dark-blue;
+}
+.p-text{
+  @apply text-ubuntu text-base text-very-dark-grayish-blue leading-loose;
+}
 .text-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }

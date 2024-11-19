@@ -14,6 +14,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="max-w-[1140px] mx-auto  mt-[165px] md:px-2 px-6">
+        <h2 className="mb-8 md:mb-[100px] text-center">
+          Designed for the future
+        </h2>
+        <div className="flex flex-col md:flex-row relative">
+          <div className="md:order-2 md:absolute -right-48 -top-48">
+            <img src="/images/illustration-editor-desktop.svg" />
+          </div>
+          <div className="flex flex-col md:order-1 pt-3 gap-7 md:gap-16 w-full md:max-w-[530px] text-center md:text-start md:flex-start">
+            <div className="flex flex-col gap-5 md:gap-5">
+              <h3>Introducing an extensible editor</h3>
+              <p className="p-text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+            </div>
+            <div className="flex flex-col gap-5 md:gap-5">
+              <h3>Robust content management</h3>
+              <p className="p-text">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

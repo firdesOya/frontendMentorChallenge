@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-h2{
-  @apply text-ubuntu font-medium text-4xl text-very-dark-blue;
+h2 {
+  @apply text-ubuntu font-medium text-4xl;
 }
-h3{
+h3 {
   @apply text-ubuntu font-medium text-2xl text-very-dark-blue;
 }
-.p-text{
+
+.p-text {
   @apply text-ubuntu text-base text-very-dark-grayish-blue leading-loose;
+}
+.p-text-white {
+  @apply text-ubuntu text-sm text-white leading-loose;
 }
 .text-ubuntu {
   font-family: "Ubuntu", sans-serif;
@@ -21,22 +25,26 @@ h3{
 
 .hero {
   width: 100%;
-  background: url('/images/bg-pattern-intro-desktop.svg'), linear-gradient(90deg, rgb(255, 143, 112) 20% , rgb(255, 61, 84) 90%);
+  background: url("/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(90deg, rgb(255, 143, 112) 20%, rgb(255, 61, 84) 90%);
   height: 600px;
   background-position: 25% -1346px;
   border-bottom-left-radius: 100px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .hero {
-    background: url('/images/bg-pattern-intro-mobile.svg'), linear-gradient(to right bottom, rgb(255, 143, 112) 10%, rgb(255, 61, 84) 58%);
+    background: url("/images/bg-pattern-intro-mobile.svg"),
+      linear-gradient(
+        to right bottom,
+        rgb(255, 143, 112) 10%,
+        rgb(255, 61, 84) 58%
+      );
     background-position: top 37% left 30%;
     background-size: 80rem;
-
-
   }
 }
 
 .btn {
-  @apply px-1 py-3 border rounded-full w-[140px] text-ubuntu text-base font-bold
+  @apply px-1 py-3 border rounded-full w-[140px] text-ubuntu text-base font-bold;
 }

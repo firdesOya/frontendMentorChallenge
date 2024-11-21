@@ -13,7 +13,7 @@ h3 {
   @apply text-ubuntu text-base text-very-dark-grayish-blue leading-loose;
 }
 .p-text-white {
-  @apply text-ubuntu text-sm text-white leading-loose;
+  @apply text-ubuntu text-base text-white leading-loose;
 }
 .text-ubuntu {
   font-family: "Ubuntu", sans-serif;
@@ -45,6 +45,23 @@ h3 {
   }
 }
 
+.bg-circles {
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: bottom 15% left -60%;
+  background-size: unset;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+@media screen and (max-width: 768px) {
+  .bg-circles {
+    background-position: center bottom -10%;
+    background-size: auto;
+  }
+}
 .btn {
   @apply px-1 py-3 border rounded-full w-[140px] text-ubuntu text-base font-bold;
 }

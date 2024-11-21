@@ -55,10 +55,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-background-gradient mt-4 ">
-        <div className="max-w-[1140px] mx-auto lg:h-[400px] flex flex-col lg:flex-row items-center justify-between">
-          <img src="/images/illustration-phones.svg" />
-          <div className="lg:max-w-[540px] ">
+      <section className="bg-circles mt-4">
+        <div className="max-w-[1140px] min-w-[320px] mx-auto px-6 xl:px-2 lg:h-[400px] flex flex-col lg:flex-row items-center  lg:justify-between">
+          <img
+            className="transform md:scale-125 -translate-y-48  md:-translate-y-28 lg:scale-100 lg:translate-y-3 lg:-translate-x-8"
+            src="/images/illustration-phones.svg"
+          />
+          <div className=" md:max-w-[540px] text-center lg:text-start pb-20 -mt-48 md:-mt-10 lg:pb-0 lg:mt-0">
             <h2 className="text-white">State of the Art Infrastructure</h2>
             <p className="p-text-white pt-8">
               With reliability and speed in mind, worldwide data centers provide

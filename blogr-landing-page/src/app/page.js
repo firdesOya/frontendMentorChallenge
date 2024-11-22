@@ -61,13 +61,44 @@ export default function Home() {
             className="transform md:scale-125 -translate-y-48  md:-translate-y-28 lg:scale-100 lg:translate-y-3 lg:-translate-x-8"
             src="/images/illustration-phones.svg"
           />
-          <div className=" md:max-w-[540px] text-center lg:text-start pb-20 -mt-48 md:-mt-10 lg:pb-0 lg:mt-0">
+          <div className=" md:max-w-[540px] text-center lg:text-start pb-24 md:pb-20  -mt-48 md:-mt-10 lg:pb-0 lg:mt-0">
             <h2 className="text-white">State of the Art Infrastructure</h2>
             <p className="p-text-white pt-8">
               With reliability and speed in mind, worldwide data centers provide
               the backbone for ultra-fast connectivity. This ensures your site
               will load instantly, no matter where your readers are, keeping
               your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="mt-24 max-w-[1140px] mx-auto flex flex-col md:flex-row items-center ">
+        <img
+          className="w-full hidden md:block h-auto object-cover transform -translate-x-[45%]  "
+          src="/images/illustration-laptop-desktop.svg"
+        />
+        <img
+          className="w-full md:hidden block h-auto object-cover"
+          src="/images/illustration-laptop-mobile.svg"
+        />
+        <div className="max-w-[580px] md:-ml-96 ml-0 flex flex-col text-center md:text-start gap-16">
+          <div>
+            <h3>Free, open, simple</h3>
+            <p className="p-text pt-6">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div>
+            <h3>Powerful tooling</h3>
+            <p className="p-text pt-6">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <section className="h-[500px]">
         <div className="hero absolute top-0 -z-10 "></div>
-        <div className="flex flex-col justify-center gap-6 h-full items-center text-center px-6 -mt-5">
+        <div className="flex flex-col justify-center gap-6 h-full items-center text-center px-6 -mt-4">
           <h1 className="text-overpass text-4xl md:text-6xl  text-white font-semibold ">
             A modern publishing platform
           </h1>
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full relative pt-40 py-60 xl:px-2 px-6 overflow-hidden">
+      <section className="w-full relative pt-40 py-[244px] xl:px-2 px-6 overflow-hidden">
         <h2 className="mb-8 md:mb-[100px] text-center text-very-dark-blue">
           Designed for the future
         </h2>
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-24 max-w-[1140px] mx-auto flex flex-col md:flex-row items-center ">
+      <section className="mt-28 max-w-[1140px] mx-auto flex flex-col md:flex-row items-center ">
         <img
           className="w-full hidden md:block h-auto object-cover transform -translate-x-[45%]  "
           src="/images/illustration-laptop-desktop.svg"

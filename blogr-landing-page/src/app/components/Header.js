@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navList } from "../constant/config";
 
 export default function Header() {
@@ -10,6 +10,19 @@ export default function Header() {
   const mobileOnclick = (id) => {
     setOpenDropDown(openDropDown === id ? null : id);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (toggle) {
+        setToggle(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [toggle]);
 
   return (
     <div className="max-w-[1140px] mx-auto pt-[60px] px-4 flex md:flex-row items-center justify-between md:gap-20">

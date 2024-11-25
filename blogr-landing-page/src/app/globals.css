@@ -6,14 +6,14 @@ h2 {
   @apply text-ubuntu font-medium text-4xl;
 }
 h3 {
-  @apply text-ubuntu font-medium text-2xl text-very-dark-blue;
+  @apply text-overpass font-semibold text-[28px] text-very-dark-blue;
 }
 
 .p-text {
-  @apply text-ubuntu text-base text-very-dark-grayish-blue leading-loose;
+  @apply text-overpass text-base text-very-dark-grayish-blue leading-loose;
 }
 .p-text-white {
-  @apply text-ubuntu text-base text-white leading-loose;
+  @apply text-overpass text-base text-white leading-loose;
 }
 .text-ubuntu {
   font-family: "Ubuntu", sans-serif;

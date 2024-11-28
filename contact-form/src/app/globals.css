@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-karla {
+  font-family: "Karla", sans-serif;
+}
+body {
+  @apply font-karla;
+}
+
+.input {
+  @apply w-full h-10 px-4 border rounded-md border-grey-medium focus:outline-none focus:ring-1 focus:ring-green-medium  hover:border-green-medium cursor-pointer;
+}

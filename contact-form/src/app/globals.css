@@ -8,7 +8,41 @@
 body {
   @apply font-karla;
 }
-
+label {
+  @apply text-grey-darker text-sm;
+}
+.input-container {
+  @apply w-full flex items-start  md:items-center flex-col md:flex-row gap-2 md:gap-10;
+}
 .input {
   @apply w-full h-10 px-4 border rounded-md border-grey-medium focus:outline-none focus:ring-1 focus:ring-green-medium  hover:border-green-medium cursor-pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid hsl(187, 24%, 22%); /* Kenar rengi */
+  background-color: #fff; /* Varsayılan arka plan beyaz */
+  cursor: pointer;
+  position: relative; /* ::before için referans */
+  transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked {
+  border: hsl(169, 82%, 27%);
+  background-color: hsl(169, 82%, 27%);
+}
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Ortalamak için yukarıdan %50 */
+  left: 50%; /* Ortalamak için soldan %50 */
+  width: 5px;
+  height: 10px;
+  border: solid #fff; /* Tik işareti beyaz */
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg); /* Ortalamak ve döndürmek */
+  transition: all 0.2s ease;
 }

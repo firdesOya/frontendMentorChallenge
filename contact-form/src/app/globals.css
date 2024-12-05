@@ -15,7 +15,7 @@ label {
   @apply w-full flex items-start  md:items-center flex-col md:flex-row gap-2 md:gap-10;
 }
 .input {
-  @apply w-full h-10 px-4 border rounded-md border-grey-medium focus:outline-none focus:ring-1 focus:ring-green-medium  hover:border-green-medium cursor-pointer;
+  @apply w-full h-10 px-4 border rounded-md focus:outline-none focus:ring-1 cursor-pointer;
 }
 
 input[type="checkbox"] {
@@ -45,4 +45,24 @@ input[type="checkbox"]:checked::before {
   border-width: 0 2px 2px 0;
   transform: translate(-50%, -50%) rotate(45deg); /* Ortalamak ve döndürmek */
   transition: all 0.2s ease;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid hsl(169, 82%, 27%);
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: hsl(169, 82%, 27%);
 }

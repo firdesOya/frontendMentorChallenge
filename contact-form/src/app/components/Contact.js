@@ -12,8 +12,8 @@ export default function Contact() {
     message: "",
     consent: false,
   });
-
   const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -35,6 +35,11 @@ export default function Contact() {
     }));
   };
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basit bir e-posta doğrulama regex'i
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = {};
@@ -45,6 +50,8 @@ export default function Contact() {
       newErrors.lastName = "This field is required";
     }
     if (!formData.email.trim()) {
+      newErrors.email = "E-mail is required";
+    } else if (!validateEmail(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
     if (!formData.queryType) {
@@ -62,6 +69,9 @@ export default function Contact() {
       setErrors(newErrors);
       return;
     }
+    setSuccess(true);
+
+    setTimeout(() => setSuccess(false), 3000);
 
     console.log(formData);
     setFormdata({
@@ -75,7 +85,18 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full min-h-screen grid place-items-center bg-green-lighter px-3 py-4">
+    <div className="w-full min-h-screen grid place-items-center bg-green-lighter px-3 py-32">
+      {success && (
+        <div className="  bg-grey-darker absolute top-5 rounded-md p-6 ">
+          <div className="flex flex-row items-center gap-3 mb-3 ">
+            <img src="/icon-success-check.svg" />
+            <h5 className="text-white font-bold text-base">Message Sent!</h5>
+          </div>
+          <span className="text-white text-sm">
+            Thanks for completing the form.We&apos;ll be in touch soon!
+          </span>
+        </div>
+      )}
       <div className="bg-white px-8 py-6 rounded-md max-w-[740px]">
         <div>
           <h2 className="font-bold text-2xl text-grey-darker mb-5">
@@ -85,7 +106,7 @@ export default function Contact() {
             className="w-full flex flex-row  flex-wrap gap-5"
             onSubmit={handleSubmit}
           >
-            <div className=" input-container">
+            <div className="input-container">
               <Input
                 title="First Name"
                 value={formData.firstName}

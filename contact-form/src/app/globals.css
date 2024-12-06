@@ -12,7 +12,7 @@ label {
   @apply text-grey-darker text-sm;
 }
 .input-container {
-  @apply w-full flex items-start  md:items-center flex-col md:flex-row gap-2 md:gap-10;
+  @apply w-full flex items-start flex-col md:flex-row gap-2 md:gap-10;
 }
 .input {
   @apply w-full h-10 px-4 border rounded-md focus:outline-none focus:ring-1 cursor-pointer;

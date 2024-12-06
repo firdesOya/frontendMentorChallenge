@@ -8,7 +8,7 @@ export default function Input({
   type = "text",
   errors = {},
   className = "",
-  onFocus
+  onFocus,
 }) {
   return (
     <div className={`${className} w-full `}>
@@ -21,10 +21,16 @@ export default function Input({
         name={name}
         value={value}
         onChange={onChange}
-        className={`input mt-3 mb-2 ${errors[name] ? "border-red-warn focus:ring-red-warn" :"border-grey-medium focus:ring-green-medium hover:border-green-medium"}`}
+        className={`input mt-3 mb-2 ${
+          errors[name]
+            ? "border-red-warn focus:ring-red-warn"
+            : "border-grey-medium focus:ring-green-medium hover:border-green-medium"
+        }`}
         onFocus={onFocus}
       />
-       {errors && errors[name] && <p className="text-red-warn  text-xs">{errors[name]}</p>}
+      {errors && errors[name] && (
+        <p className="text-red-warn  text-xs">{errors[name]}</p>
+      )}
     </div>
   );
 }

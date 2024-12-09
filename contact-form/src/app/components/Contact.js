@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import Input from "./Input";
 
@@ -71,6 +71,10 @@ export default function Contact() {
     }
     setSuccess(true);
 
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+
     setTimeout(() => setSuccess(false), 3000);
 
     console.log(formData);
@@ -87,8 +91,8 @@ export default function Contact() {
   return (
     <div className="w-full min-h-screen grid place-items-center bg-green-lighter px-3 py-32">
       {success && (
-        <div className="  bg-grey-darker absolute top-5 rounded-md p-6 ">
-          <div className="flex flex-row items-center gap-3 mb-3 ">
+        <div className="bg-grey-darker absolute top-5 rounded-md p-6">
+          <div className="flex flex-row items-center gap-3 mb-3">
             <img src="/icon-success-check.svg" />
             <h5 className="text-white font-bold text-base">Message Sent!</h5>
           </div>

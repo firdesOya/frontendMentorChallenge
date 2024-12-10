@@ -89,7 +89,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full min-h-screen grid place-items-center bg-green-lighter px-3 py-32">
+    <div className="w-full min-h-screen grid place-items-center bg-green-lighter px-3 py-[126px]">
       {success && (
         <div className="bg-grey-darker absolute top-5 rounded-md p-6">
           <div className="flex flex-row items-center gap-3 mb-3">
@@ -101,13 +101,13 @@ export default function Contact() {
           </span>
         </div>
       )}
-      <div className="bg-white px-8 py-6 rounded-md max-w-[740px]">
+      <div className="bg-white px-8 py-8 rounded-md max-w-[730px]">
         <div>
-          <h2 className="font-bold text-2xl text-grey-darker mb-5">
+          <h2 className="font-bold text-3xl text-grey-darker mb-8 mt-2">
             Contact Us
           </h2>
           <form
-            className="w-full flex flex-row  flex-wrap gap-5"
+            className="w-full flex flex-row  flex-wrap gap-3"
             onSubmit={handleSubmit}
           >
             <div className="input-container">
@@ -136,13 +136,13 @@ export default function Contact() {
               errors={errors}
               onFocus={handleFocus}
             />
-            <div className="w-full">
+            <div className="w-full mt-1">
               <label>
                 Query Type
                 <span className="ml-2 text-green-medium">*</span>
               </label>
               <div className="input-container mt-3">
-                <label className="input text-base gap-2 flex items-center">
+                <label className="input text-[20px] gap-2 flex items-center">
                   <input
                     type="radio"
                     name="queryType"
@@ -152,7 +152,7 @@ export default function Contact() {
                   />
                   General Enquiry
                 </label>
-                <label className="input gap-2 text-base  flex items-center">
+                <label className="input gap-2 text-[20px]  flex items-center">
                   <input
                     type="radio"
                     name="queryType"
@@ -169,7 +169,7 @@ export default function Contact() {
                 </span>
               )}
             </div>
-            <div className="mt-3 flex flex-col gap-3 w-full">
+            <div className="mt-5 flex flex-col gap-3 w-full">
               <label>
                 Message
                 <span className="ml-2 text-green-medium">*</span>
@@ -178,7 +178,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   onFocus={handleFocus}
-                  rows={6}
+                  rows={3}
                   className={`w-full py-2 px-3 mt-3 border resize-none rounded-md focus:outline-none focus:ring-1  ${
                     errors.message
                       ? "border-red-warn focus:ring-red-warn"
@@ -190,8 +190,8 @@ export default function Contact() {
                 <p className="text-red-500 text-xs">{errors.message}</p>
               )}
             </div>
-            <div>
-              <label className="flex items-center gap-1 md:gap-2 text-[10px] sm:text-xs md:text-sm">
+            <div className="my-8">
+              <label className="flex items-center gap-1 md:gap-3 text-[10px] sm:text-xs md:text-sm">
                 <input
                   type="checkbox"
                   name="consent"
@@ -200,7 +200,7 @@ export default function Contact() {
                   className="cursor-pointer appearance-none w-3 h-3 "
                 />
                 I hereby consent to being contacted by the team
-                <span className=" text-green-medium">*</span>
+                <span className="-ml-1 text-green-medium">*</span>
               </label>
               {errors.consent && (
                 <p className="text-red-warn text-[10px] sm:text-xs mt-2">
@@ -210,7 +210,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="bg-green-medium hover:bg-grey-darker text-white w-full font-semibold h-[45px] rounded-md text-sm"
+              className="bg-green-medium hover:bg-grey-darker text-white w-full font-semibold h-[55px] rounded-md text-base"
             >
               Submit
             </button>

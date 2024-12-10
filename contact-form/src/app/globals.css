@@ -9,13 +9,13 @@ body {
   @apply font-karla;
 }
 label {
-  @apply text-grey-darker text-sm;
+  @apply text-grey-darker text-base;
 }
 .input-container {
-  @apply w-full flex items-start flex-col md:flex-row gap-2 md:gap-10;
+  @apply w-full flex items-start flex-col md:flex-row gap-2 md:gap-4;
 }
 .input {
-  @apply w-full h-10 px-4 border rounded-md focus:outline-none focus:ring-1 cursor-pointer;
+  @apply w-full h-12 px-4 border rounded-md focus:outline-none focus:ring-1 cursor-pointer;
 }
 
 input[type="checkbox"] {
@@ -48,8 +48,8 @@ input[type="checkbox"]:checked::before {
 }
 input[type="radio"] {
   appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 1px solid hsl(169, 82%, 27%);
   border-radius: 100%;
   cursor: pointer;
@@ -59,6 +59,7 @@ input[type="radio"] {
   justify-content: center;
 }
 
+
 input[type="radio"]:checked::before {
   content: "";
   width: 10px;
@@ -66,3 +67,4 @@ input[type="radio"]:checked::before {
   border-radius: 100%;
   background-color: hsl(169, 82%, 27%);
 }
+

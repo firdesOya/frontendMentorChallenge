@@ -112,6 +112,7 @@ export default function Contact() {
           >
             <div className="input-container">
               <Input
+                type="text"
                 title="First Name"
                 value={formData.firstName}
                 name="firstName"
@@ -120,6 +121,7 @@ export default function Contact() {
                 onFocus={handleFocus}
               />
               <Input
+                type="text"
                 title="Last Name"
                 value={formData.lastName}
                 name="lastName"

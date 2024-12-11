@@ -144,7 +144,7 @@ export default function Contact() {
                 <span className="ml-2 text-green-medium">*</span>
               </label>
               <div className="input-container mt-3">
-                <label className="input text-[20px] gap-2 flex items-center">
+                <label className="radio-label">
                   <input
                     type="radio"
                     name="queryType"
@@ -154,7 +154,7 @@ export default function Contact() {
                   />
                   General Enquiry
                 </label>
-                <label className="input gap-2 text-[20px]  flex items-center">
+                <label className="radio-label">
                   <input
                     type="radio"
                     name="queryType"
@@ -201,7 +201,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="cursor-pointer appearance-none w-3 h-3 "
                 />
-                I hereby consent to being contacted by the team
+                I consent to being contacted by the team
                 <span className="-ml-1 text-green-medium">*</span>
               </label>
               {errors.consent && (

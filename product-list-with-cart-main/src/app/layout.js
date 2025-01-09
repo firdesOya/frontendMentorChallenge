@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={redHatText.className}>
-        {children}
+        <main className="bg-rose-50 min-h-screen">{children}</main>
       </body>
     </html>
   );

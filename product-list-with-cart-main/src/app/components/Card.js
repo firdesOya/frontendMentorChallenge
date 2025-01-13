@@ -5,11 +5,13 @@ import Image from "next/image";
 export default function Card({ item }) {
   return (
     <div>
-      <div className="inline-block">
-        <picture className="w-full">
-          <source srcSet={item.imgDesktop} media="(min-width:1024px)" />
+      <div className="inline-block overflow-hidden rounded-md">
+        <picture className="w-full block">
+          <source srcSet={item.imgDesktop} media="(min-width:1024px)" className="" />
           <source srcSet={item.imgTablet} media="(min-width:768px)" />
-          <img src={item.imgMobile} alt={item.title} />
+          <img src={item.imgMobile} alt={item.title} 
+            className="w-full h-auto rounded-md"
+          />
         </picture>
         <div className="flex justify-center -mt-4">
           <AddButton />

@@ -1,31 +1,35 @@
-import Image from "next/image";
+"use client";
+import { useState, useCallback } from "react";
 import CardList from "./components/CardList";
-import OrderButton from "./components/OrderButton";
+import OrderCart from "./components/OrderCart";
 
 export default function Home() {
+  const [cartItems, setCartItems] = useState({});
+
+  const addToCart = useCallback((item) => {
+    setCartItems((prevItems) => {
+      const newItems = { ...prevItems };
+      if (newItems[item.id]) {
+        newItems[item.id] = {
+          ...newItems[item.id],
+          quantity: newItems[item.id].quantity + 1
+        };
+      } else {
+        newItems[item.id] = { ...item, quantity: 1 };
+      }
+      return newItems;
+    });
+  }, []);
+
   return (
     <div className="w-full h-full">
       <div className="pt-24 max-w-[1220px] flex gap-6 min-w-[320px] mx-auto py-[70px] px-5 lg:px-0">
         <div className="max-w-[800px]">
-          <h2 className="font-bold text-4xl mb-6 text-rose-900">Desserts</h2>
-          <CardList />
+          <h2 className="font-bold text-4xl mb-8 text-rose-900">Desserts</h2>
+          <CardList addToCart={addToCart} />
         </div>
-        <div className="h-fit flex flex-col bg-white rounded-md p-3">
-          <h3 className="font-bold pb-6 text-red text-2xl">Your Cart(0)</h3>
-          <div className="flex flex-col items-center ">
-            <Image
-              src="/images/illustration-empty-cart.svg"
-              alt="cart"
-              width={100}
-              height={100}
-            />
-            <p className="text-center text-sm py-4">
-              Your added items will appear here
-            </p>
-          </div>
-          <div className="hidden">
-            <OrderButton title="Confirm Order" />
-          </div>
+        <div className="w-full max-w-[385px]">
+          <OrderCart cartItems={cartItems} />
         </div>
       </div>
     </div>

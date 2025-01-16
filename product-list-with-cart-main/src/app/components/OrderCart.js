@@ -14,9 +14,8 @@ export default function OrderCart({ cartItems }) {
     const total = price * item.quantity;
     return sum + total;
   }, 0);
-  const totalAmount = itemsArray.reduce((sum, item) => {
-    return sum + item.price * item.quantity;
-  }, 0);
+
+  
 
   return (
     <div className="h-fit flex flex-col bg-white rounded-md px-6 py-5">
@@ -39,22 +38,31 @@ export default function OrderCart({ cartItems }) {
         ) : (
           itemsArray.map((item) => {
             return (
-              <div key={item.id} className="flex flex-col items-start pt-3">
-                <p className="text-sm text-rose-900 font-semibold">
-                  {item.subTitle}
-                </p>
-                <div className="flex flex-row pb-3">
-                  <p className="text-sm">
-                    <span className="text-red font-semibold">
-                      {item.quantity}x
-                    </span>
-                    <span className="text-rose-500 opacity-50">
-                      ${formatPrice(item.price)}
-                    </span>
-                    <span>${formatPrice(item.price * item.quantity)}</span>
+              <div
+                key={item.id}
+                className="flex flex-row justify-between items-center border-b border-rose-100"
+              >
+                <div className="flex flex-col items-start pt-3">
+                  <p className="text-sm text-rose-900 font-semibold">
+                    {item.subTitle}
                   </p>
+                  <div className="flex flex-row pb-3">
+                    <p className="text-sm pt-1">
+                      <span className="text-red font-semibold pr-4">
+                        {item.quantity}x
+                      </span>
+                      <span className="text-rose-500 opacity-50 pr-2">
+                        @ ${formatPrice(item.price)}
+                      </span>
+                      <span className="text-rose-500 font-semibold">
+                        ${formatPrice(item.price * item.quantity)}
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <hr className="w-full" />
+                <button>
+                  <img src="/images/icon-remove-item.svg" alt="Remove item" />
+                </button>
               </div>
             );
           })

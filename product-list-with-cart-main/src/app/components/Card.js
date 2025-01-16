@@ -1,5 +1,6 @@
 import React from "react";
 import AddButton from "./AddButton";
+import { formatPrice } from "../constants/utils";
 
 export default function Card({ item,addToCart}) {
   return (
@@ -19,7 +20,7 @@ export default function Card({ item,addToCart}) {
       <div className="pt-3 flex flex-col items-start gap-1">
         <span className="text-rose-400 text-sm">{item.title}</span>
         <span className="font-semibold text-base text-rose-900">{item.subTitle}</span>
-        <span className="text-red text-sm font-semibold">{item.price}</span>
+        <span className="text-red text-sm font-semibold">${formatPrice(item.price)}</span>
       </div>
     </div>
   );
